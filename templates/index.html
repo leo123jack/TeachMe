@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat UI</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="chat-container">
+            <div class="chat-header">
+                <h1>TeachMe!</h1>
+            </div>
+            <div class="interface">
+                <div class="left-side">
+                    <div class="quiz">
+                                    <!-- Trigger/Open The Modal -->
+                        <button id="quiz-button" class="modal-button">Quiz Me</button>
+
+                        <!-- The Modal -->
+                        <div id="myModal" class="modal">
+
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <div class="chat-header">
+                                    <p>Quiz</p>
+                                </div>
+                                <div class="quiz-input" id="quiz-input">
+                                    <input type="text" id="topic" placeholder="Type a topic..." />
+                                <button id="questionBtn" class="question-button" >New Question</button>
+                                </div>
+                                <p id="question">Question</p>
+                                <button class="answer-button" onclick="alert('Incorrect!')">A</button>
+                                <button class="answer-button" onclick="alert('Incorrect!')">B</button>
+                                <button class="answer-button" onclick="alert('Incorrect!')">C</button>
+                                <button class="answer-button" onclick="alert('Incorrect!')">D</button>
+                            </div>
+                        </div>
+                        <a href="/download">
+                            <button class="modal-button">Summary</button>
+                            </a>
+                        <button class="dark-mode-button" id="dark-mode-button">Toggle Dark Mode</button>
+                    </div>
+                    <div class="mascot-div">
+                        <div class="mascot-container" id="mascot-container">
+                            <img id="mascot" src="../static/images/scrubby/neutral.png">
+                        </div>
+                    </div>
+                </div>
+                <div class= "right-side">
+                    <div class="chat-box" id="chat-box">
+                        <div class="message received">
+                            <p>Hi, I'm Scrubby! Tell me about what you're studying.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-input" id="chat-input">
+                <input type="text" id="input" placeholder="Type a message..." />
+                <button id="button">Send</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../static/js/script.js"></script>
+</html>
